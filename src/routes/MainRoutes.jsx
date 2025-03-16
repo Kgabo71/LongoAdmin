@@ -6,7 +6,7 @@ import DashboardLayout from 'layout/Dashboard';
 
 // render- Dashboard
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/default')));
-const Settings = Loadable(lazy(() => import('pages/Settings')));
+//const Settings = Loadable(lazy(() => import('pages/Settings')));
 
 
 // render - color
@@ -40,10 +40,7 @@ const MainRoutes = {
       path: 'typography',
       element: <Typography />
     },
-    {
-      path: 'settings',
-      element: <Settings />
-    },    
+    
     {
       path: 'color',
       element: <Color />
