@@ -6,6 +6,8 @@ import DashboardLayout from 'layout/Dashboard';
 
 // render- Dashboard
 const DashboardDefault = Loadable(lazy(() => import('pages/dashboard/default')));
+const Settings = Loadable(lazy(() => import('pages/Settings')));
+
 
 // render - color
 const Color = Loadable(lazy(() => import('pages/component-overview/color')));
@@ -14,7 +16,7 @@ const Shadow = Loadable(lazy(() => import('pages/component-overview/shadows')));
 
 // render - sample page
 const SamplePage = Loadable(lazy(() => import('pages/extra-pages/sample-page')));
-
+//const Biddings = Loadable(lazy(() => import('pages/extra-pages/biddings')));
 // ==============================|| MAIN ROUTING ||============================== //
 
 const MainRoutes = {
@@ -39,6 +41,10 @@ const MainRoutes = {
       element: <Typography />
     },
     {
+      path: 'settings',
+      element: <Settings />
+    },    
+    {
       path: 'color',
       element: <Color />
     },
@@ -49,7 +55,11 @@ const MainRoutes = {
     {
       path: 'sample-page',
       element: <SamplePage />
-    }
+    },
+  /*  {
+      path: 'biddings',
+      element: <BiddingPage />
+    }*/
   ]
 };
 
